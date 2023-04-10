@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.util.StringUtils;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @SpringBootApplication
@@ -23,6 +25,7 @@ public class JavaStringApplication {
 
         //swap First And Last CharsIf Word Contains `S`
         swapFirstAndLastCharsIfWordContains_S("coensio");
+
     }
 
     private static int countOfDifferentCharsFirstWay(String text) {
@@ -67,6 +70,7 @@ public class JavaStringApplication {
         //Second Way
         result2 = new StringBuilder(text).reverse().toString();
 
+        //result
         System.out.println("returnReverseOfString => result1:" + result1 + " result2:" + result2);
     }
 
@@ -82,5 +86,6 @@ public class JavaStringApplication {
         System.out.println("returnReverseOfString => result:" + result);
         return result;
     }
+
 
 }
